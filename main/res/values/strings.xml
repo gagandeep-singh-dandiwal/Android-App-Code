@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Memorise Notes and Chords</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_fragment_setting">fragment_setting</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="lbl_practice_type">Practice Type</string>
+    <string name="lbl_Notes_Type">Notes Type</string>
+    <string name="lbl_Scale_Type">Scale Type</string>
+    <string name="lbl_Root_Note">Root Note</string>
+    <string name="lbl_Chords">Chords</string>
+    <string name="lbl_HomeScreen_PracticeType_Notes">Notes</string>
+    <string name="lbl_Show_Note_Degrees">Show Note Degrees</string>
+    <string name="btn_Start">Start</string>
+    <string name="lbl_Tempo">Tempo</string>
+    <string name="btn_Stop">Stop</string>
+    <string name="msg_select_chords">Please select chords</string>
+    <string name="lbl_look">Look</string>
+    <string name="lbl_play">Play</string>
+</resources>

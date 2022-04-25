@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/lbl_practice_type"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/practiceTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:padding="2dp" />
+
+
+    <TextView
+        android:id="@+id/txtNoteType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/lbl_Notes_Type"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/notesTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:padding="2dp"></Spinner>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/noteTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="notesTypeSpinner,txtNoteType"/>
+
+    <TextView
+        android:id="@+id/txtScaleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/lbl_Scale_Type"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/scaleTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:padding="2dp"></Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/lbl_Root_Note"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/rootNoteSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:padding="2dp"></Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/lbl_Chords"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+<!--    <Spinner-->
+<!--        android:id="@+id/chordTypeSpinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:padding="2dp"-->
+<!--        android:spinnerMode="dialog"-->
+<!--        android:background="@drawable/bg_spinner"></Spinner>-->
+
+    <TextView
+        android:id="@+id/txtSelectedChords"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:hint="Select Chords"
+        android:paddingTop="14dp">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowNoteDegreeConstraintLayout">
+
+        <TextView
+            android:id="@+id/txtShowNoteDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/ShowNoteDegreeConstraintLayout"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/lbl_Show_Note_Degrees"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxShowNoteDegree"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintRight_toRightOf="@id/ShowNoteDegreeConstraintLayout"
+            app:layout_constraintBottom_toBottomOf="@id/ShowNoteDegreeConstraintLayout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+    <!--        android:id="@+id/scaleTypeDropdown"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <AutoCompleteTextView-->
+    <!--            android:id="@+id/autoCompleteTextView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:inputType="none"/>-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->

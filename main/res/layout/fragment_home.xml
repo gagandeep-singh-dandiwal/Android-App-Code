@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/lbl_PracticeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_practice_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hifen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        app:layout_constraintBottom_toBottomOf="@id/lbl_PracticeType"
+        app:layout_constraintStart_toEndOf="@id/lbl_PracticeType" />
+
+    <TextView
+        android:id="@+id/txt_PracticeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chords"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_PracticeType"
+        app:layout_constraintStart_toEndOf="@+id/hifen1" />
+
+    <TextView
+        android:id="@+id/lbl_RootNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_Root_Note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_PracticeType" />
+
+    <TextView
+        android:id="@+id/hifen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        app:layout_constraintBottom_toBottomOf="@id/lbl_RootNote"
+        app:layout_constraintStart_toEndOf="@id/lbl_RootNote" />
+
+    <TextView
+        android:id="@+id/txt_RootNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chords"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_RootNote"
+        app:layout_constraintStart_toEndOf="@+id/hifen2" />
+
+
+    <LinearLayout
+        android:id="@+id/grp_scaleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_RootNote">
+
+        <TextView
+            android:id="@+id/lbl_ScaleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_Scale_Type" />
+
+        <TextView
+            android:id="@+id/hifen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/txt_ScaleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chords" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/grp_notesType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_RootNote">
+
+        <TextView
+            android:id="@+id/lbl_NotesType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_Notes_Type" />
+
+        <TextView
+            android:id="@+id/hifen4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/txt_NotesType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chords" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="C"
+        android:textAlignment="textStart"
+        android:textSize="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:text="2"-->
+    <!--        android:textSize="50dp"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/radioButton2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.096"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/txtNote"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/sharpOrflat"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <TextView
+        android:id="@+id/textTempoEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_Tempo"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@id/btnStart" />
+
+    <TextView
+        android:id="@+id/sharpOrflat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:textSize="80dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/txtNote"
+        app:layout_constraintTop_toTopOf="@id/txtNote" />
+
+    <TextView
+        android:id="@+id/txtChordType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maj7"
+        android:textSize="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNote"
+        app:layout_constraintStart_toEndOf="@+id/txtNote"
+        app:layout_constraintTop_toTopOf="@+id/txtNote"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!--    <androidx.constraintlayout.widget.Group-->
+    <!--        android:id="@+id/group"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintBottom_toTopOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_look"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/radioButton1"
+        app:layout_constraintEnd_toEndOf="@id/radioButton1"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="@id/radioButton1" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:button="@drawable/custom_gagan_icon"
+        android:clickable="false"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_play"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/radioButton2"
+        app:layout_constraintEnd_toEndOf="@id/radioButton2"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="@id/radioButton2" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:button="@drawable/custom_gagan_icon"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtNote"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtTempo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="120"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnMinusOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinusFive"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="2dp"
+        android:text="bpm"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTempo"
+        app:layout_constraintStart_toEndOf="@+id/txtTempo"></TextView>
+
+    <Button
+        android:id="@+id/btnMinusFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="-5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTempo"
+        app:layout_constraintEnd_toStartOf="@+id/txtTempo"
+        app:layout_constraintTop_toBottomOf="@id/textTempoEnglish" />
+
+    <Button
+        android:id="@+id/btnMinusOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="-1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtTempo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempo" />
+
+    <Button
+        android:id="@+id/btnPlusFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="+5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTempo"
+        app:layout_constraintStart_toEndOf="@+id/txtTempo" />
+
+    <Button
+        android:id="@+id/btnPlusOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+
+        android:text="+1"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTempo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempo" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_Start"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="57dp" />
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        android:layout_width="125dp"-->
+    <!--        android:layout_height="22dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:visibility="invisible" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
